@@ -1,6 +1,6 @@
 # BACKEND MERN CALENDAR
 
-##DEV
+## DEV
 
 1. Instalar dependencias  'npm install'
 2. Clonar archivo '.env.template' y renombrar a '.env'
