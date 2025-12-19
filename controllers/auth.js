@@ -88,7 +88,7 @@ export const loginUsuario = async (req = request, res = response) => {
 
         const token = await generarJWT(usuario.id, usuario.name)
 
-        res.status(201).json({
+        res.status(200).json({
             ok: true,
             uid: usuario.id,
             name: usuario.name,
@@ -118,6 +118,7 @@ export const revalidarToken = async (req = request, res = response) => {
     const token = await generarJWT(uid, name)
     res.json({
         ok: true,
+        uid, name,
         token
     })
 
